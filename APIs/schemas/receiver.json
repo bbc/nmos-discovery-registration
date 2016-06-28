@@ -87,6 +87,11 @@
           "default": null
         }
       }
+    },
+    "seamless_protection": {
+      "description": "Receiver is running with support for 2022-7 'hitless' failover",
+      "type": "boolean",
+      "default": false
     }
   }
 }

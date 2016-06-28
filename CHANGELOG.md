@@ -4,5 +4,7 @@ This document provides an overview of changes between released versions of this 
 ## Release (unreleased)
 * Under active development
 
+* Add indication of support for 2022-7 'hitless' failover in Senders and Receivers
+
 ## Release v1.0
 * Initial release
