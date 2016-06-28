@@ -70,6 +70,11 @@
       "description": "HTTP URL to a file describing how to connect to the Sender (SDP for RTP)",
       "type": "string",
       "format": "uri"
+    },
+    "seamless_protection": {
+      "description": "Sender is running with support for 2022-7 'hitless' failover",
+      "type": "boolean",
+      "default": false
     }
   }
 }
