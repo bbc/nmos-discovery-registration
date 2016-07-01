@@ -45,8 +45,16 @@
       "format": "uri"
     },
     "caps": {
-      "description": "Capabilities (not yet defined)",
-      "type": "object"
+      "description": "Capabilities",
+      "type": "object",
+      "required": [],
+      "properties": [
+        "seamless_protection": {
+          "description": "Receiver is capable of supporting 'hitless' failover",
+          "type": "string",
+          "enum": ["SMPTE2022-7"]
+        }
+      ]
     },
     "tags": {
       "description": "Key value set of freeform string tags to aid in filtering sources. Values should be represented as an array of strings. Can be empty.",
@@ -87,11 +95,6 @@
           "default": null
         }
       }
-    },
-    "seamless_protection": {
-      "description": "Receiver is running with support for 2022-7 'hitless' failover",
-      "type": "boolean",
-      "default": false
     }
   }
 }

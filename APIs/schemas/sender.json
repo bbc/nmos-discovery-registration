@@ -72,9 +72,9 @@
       "format": "uri"
     },
     "seamless_protection": {
-      "description": "Sender is running with support for 2022-7 'hitless' failover",
-      "type": "boolean",
-      "default": false
+      "description": "Sender is running with support for 'hitless' failover",
+      "type": "string",
+      "enum": ["SMPTE2022-7"]
     }
   }
 }
