@@ -45,8 +45,23 @@
       "format": "uri"
     },
     "caps": {
-      "description": "Capabilities (not yet defined)",
-      "type": "object"
+      "description": "Capabilities",
+      "type": "object",
+      "required": []
+      "properties": [
+        "fec": {
+          "description": "Forward error correction modes supported by the Receiver if any",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "SMPTE2022-5-FEC",
+              "ulpfec",
+              "flexfec"
+            ]
+          }
+        }
+      ]
     },
     "tags": {
       "description": "Key value set of freeform string tags to aid in filtering sources. Values should be represented as an array of strings. Can be empty.",

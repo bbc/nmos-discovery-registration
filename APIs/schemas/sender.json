@@ -70,6 +70,15 @@
       "description": "HTTP URL to a file describing how to connect to the Sender (SDP for RTP)",
       "type": "string",
       "format": "uri"
+    },
+    "fec": {
+      "description": "Forward error correction mode supported by the Sender if any",
+      "type": "string",
+      "enum": [
+        "SMPTE2022-5-FEC",
+        "ulpfec",
+        "flexfec"
+      ]
     }
   }
 }
