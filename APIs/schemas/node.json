@@ -101,6 +101,16 @@
           }
         }
       }
+    },
+    "clocks": {
+      "description": "clocks made available by the node",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "clock_internal.json" },
+          { "$ref": "clock_ptp.json" }
+        ]
+      }
     }
   }
 }
