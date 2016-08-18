@@ -4,13 +4,13 @@
   "title": "Clock with no external reference",
   "type": "object",
   "required": [
-    "id",
+    "name",
     "ref_type"
 ],
 "properties": {
-  "id": {
+  "name": {
     "type": "string",
-    "description": "id for this refclock (unique for this set of clocks)",
+    "description": "Name of this refclock (unique for this set of clocks)",
     "pattern": "clk[0-9]+"
   },
   "ref_type": {
