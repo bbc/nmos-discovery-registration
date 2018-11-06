@@ -1,22 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Describes a generic Source",
-  "title": "Generic Source resource",
+  "description": "Describes a data Source",
+  "title": "Data Source resource",
   "allOf": [
     { "$ref": "source_core.json" },
     {
       "type": "object",
       "required": [
-        "format"
+        "format",
+        "data_type"
       ],
       "properties": {
         "format": {
           "description": "Format of the data coming from the Source as a URN",
           "type": "string",
           "enum": [
-            "urn:x-nmos:format:video",
-            "urn:x-nmos:format:mux"
+            "urn:x-nmos:format:data"
+          ],
+          "format": "uri"
+        },
+        "data_type" : {
+          "description" : "Subclassification of the data type produced by this Source as a URN",
+          "type" : "string",
+          "enum": [
+            "urn:x-nmos:data:ancillary"
           ],
           "format": "uri"
         }
