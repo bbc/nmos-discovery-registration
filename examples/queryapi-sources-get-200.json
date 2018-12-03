@@ -83,7 +83,21 @@
         "label": "Capture Card Source TR-04/2022-6",
         "id": "782fac41-17f6-4a21-8186-57ba63a1a8d3",
         "device_id": "9126cc2f-4c26-4c9b-a6cd-93c4381c9be5",
-        "clock_name": "clk0"
+        "clock_name": "clk0",
+        "channels": [
+          {
+            "label": "video",
+            "format": "urn:x-nmos:format:video"
+          },
+          {
+            "label": "audio",
+            "format": "urn:x-nmos:format:audio"
+          },
+          {
+            "label": "anc",
+            "format": "urn:x-nmos:format:data"
+          }
+        ]
     },
     {
         "description": "Capture Card Source 2022-6 (No Refclock)",
@@ -99,6 +113,20 @@
         "label": "Capture Card Source 2022-6 (No Refclock)",
         "id": "3ca37fce-c0cf-42a6-86ad-43635a53b5bb",
         "device_id": "9126cc2f-4c26-4c9b-a6cd-93c4381c9be5",
-        "clock_name": null
+        "clock_name": null,
+        "channels": [
+          {
+            "label": "video",
+            "format": "urn:x-nmos:format:video"
+          },
+          {
+            "label": "audio",
+            "format": "urn:x-nmos:format:audio"
+          },
+          {
+            "label": "anc",
+            "format": "urn:x-nmos:format:data"
+          }
+        ]
     }
 ]

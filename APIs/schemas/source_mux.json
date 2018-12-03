@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes a mux Source",
+  "title": "Mux Source resource",
+  "allOf": [
+    { "$ref": "source_core.json" },
+    {
+      "type": "object",
+      "required": [
+        "format"
+      ],
+      "properties": {
+        "format": {
+          "description": "Format of the data coming from the Source as a URN",
+          "type": "string",
+          "enum": [
+            "urn:x-nmos:format:mux"
+          ],
+          "format": "uri"
+        },
+        "channels" : {
+          "description" : "Array of objects describing the inner components of the multiplex",
+          "type" : "array",
+          "minItems": 1,
+          "items" : {
+            "title" : "Component",
+            "type" : "object",
+            "required" : [
+              "label",
+              "format"
+            ],
+            "properties" :
+            {
+              "label" : {
+                "description" : "Label for this channel (free text)",
+                "type" : "string"
+              },
+              "format" : {
+                "description" : "Format of the component of the multiplex (video/audio/data)",
+                "type" : "string",
+                "oneOf": [
+                  {
+                    "enum" : [
+                      "urn:x-nmos:format:video",
+                      "urn:x-nmos:format:audio",
+                      "urn:x-nmos:format:data"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
