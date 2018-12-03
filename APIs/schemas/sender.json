@@ -82,6 +82,18 @@
               "default": false
             }
           }
+        },
+        "transmit_mode": {
+          "description": "Mechanism used to split the Flow into multiple streams for transmission (RTP only)",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "RP.2110-23:MULTI-2SI",
+              "RP.2110-23:PHASED"
+            ]
+          }
         }
       }
     }
