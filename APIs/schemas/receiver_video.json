@@ -51,6 +51,7 @@
               "items": {
                 "type": "string",
                 "enum": [
+                  "DEFAULT",
                   "RP.2110-23:MULTI-2SI",
                   "RP.2110-23:PHASED"
                 ]
