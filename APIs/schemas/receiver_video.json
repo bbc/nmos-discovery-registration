@@ -43,6 +43,22 @@
                   }
                 ]
               }
+            },
+            "min_frame_width": {
+            },
+            "max_frame_width": {
+            },
+            "min_frame_height" : {
+            },
+            "max_frame_height" : {
+            },
+            "interlace_modes" : {
+            },
+            "colorspaces" : {
+            },
+            "transfer_characteristics": {
+            },
+            "grain_rates": {
             }
           }
         }

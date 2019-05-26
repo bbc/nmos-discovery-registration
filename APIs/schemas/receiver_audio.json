@@ -44,6 +44,16 @@
                   }
                 ]
               }
+            },
+            "min_channels": {
+            },
+            "max_channels": {
+            },
+            "bit_depths": {
+            },
+            "sample_rates": {
+            },
+            "grain_rates": {
             }
           }
         }
